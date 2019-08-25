@@ -1,0 +1,31 @@
+---
+label: Features Section
+hide_body: true
+is_partial: true
+display_field: section_id
+fields:
+  - type: text
+    name: section_id
+    label: Section Id
+    default: features
+    config:
+      required: true
+  - type: null
+    name: features
+    label: Features
+    description: A list of features to be displayed in the section
+  - type: text
+    name: component
+    label: Component
+    hidden: true
+    config:
+      required: true
+    default: Features
+  - type: text
+    name: type
+    label: Reference Type Name
+    description: 'Name of the Stackbit object model, used by fields of type reference'
+    hidden: true
+    default: features
+    config:
+      required: true
